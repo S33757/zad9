@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class Main {
         Car car9 = new Car("Mazda 3", 2008);
         Car car10 = new Car("Subaru Outback", 2023);
 
-        ArrayList<Car> cars = new ArrayList<>();
+        ArrayList<Car> cars = new ArrayList<>(11);
         cars.add(car1);
         cars.add(car2);
         cars.add(car3);
@@ -26,11 +27,10 @@ public class Main {
         cars.add(car9);
         cars.add(car10);
 
-//        for (int i = 0; i < cars.size(); i++) {
-        ArrayList<Car> cars
+        Collections.sort(cars);
 
+        for (Car car : cars) {
+            System.out.println(car);
         }
-
-
     }
 }

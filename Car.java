@@ -1,13 +1,23 @@
 import java.util.ArrayList;
 
 public class Car implements Comparable<Car> {
-    public String nazwaModelu;
-    public int rok;
+    private String nazwaModelu;
+    private int rok;
 
     public Car(String nazwaModelu, int rok) {
         this.nazwaModelu = nazwaModelu;
         this.rok = rok;
     }
+
+    public String getNazwaModelu() {
+        return nazwaModelu;
+    }
+
+    public int getRok() {
+        return rok;
+    }
+
+
 
     @Override
     public int compareTo(Car car) {
